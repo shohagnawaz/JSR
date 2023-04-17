@@ -51,13 +51,103 @@
         }*/
 
         //for loop
-        let i;
-        for (i = 0; i < 10; i = i + 1) {
-            if (i == 3 || i == 5 || i == 7) {
-                continue;
-            }
-            document.write(i +' = '+ '<button>Submit</button><br/>' );
-        }
+        // let i;
+        // for (i = 0; i < 10; i = i + 1) {
+        //     if (i == 3 || i == 5 || i == 7) {
+        //         continue;
+        //     }
+        //     document.write(i +' = '+ '<button>Submit</button><br/>' );
+        // }
+
+        //Functions
+        // function add() {
+        //     let a = 2;
+        //     let b = 3;
+        //     let c = a + b;
+        //     document.write(c);        
+        // }
+        // add();
+
+        // function add(a, b) {
+        //     let c = a + b;
+        //     document.write(c + '<br/>');
+        // }
+        // add(1, 2);
+        // add(2, 3);
+        // add(3, 4);
+        // add(4, 5);
+        // add(5, 6);
+
+        // function writeName(name) {
+        //     document.write(name + '<br/>'); 
+        // }
+        // writeName('Md. Shah Nawaz Shohag');
+        // writeName('Md. Shohanur Rhaman');
+        // writeName('Md. Asraful Islam');
+        // writeName('Md. Badrul Alam');
+        // writeName('Md. Abdul Karim');
+
+        //Returning Function
+        // function nawaz(a, b) {
+        //     return a + b;
+        // }
+        // let result = nawaz(1, 2);
+        // document.write(result);
+
+        // function write() {
+        //     return 'Shoha';
+        // }
+        // let result = write() + 'g';
+        // document.write(result);
+
+        //Object
+
+        // let myPC = {
+        //     motherboard: 'Gigabyte Z490',
+        //     processor: 'core i5 10500',
+        //     ram: '32GB',
+        //     hdd: '2TB',
+        //     isSSD: true,
+        //     ssdBrand: 'Toshiba'
+        // }
+        // document.write(myPC.isSSD);
+
+        // let name = ['shohag','nawaz','shohanur','sujon','banna','tuhin']
+        // // for (let i = 0; i < name.length; i++) {
+        // //     document.write(name[i]+ '<br/>');
+        // // }
+        // for(let i in name) {
+        //     document.write(name[i]+ '<br/>');
+        // }
+
+        // let person = {
+        //     name: 'Shohag',
+        //     age: 37,
+        //     city:'Dhaka',
+        //     homeDiscrict: 'Narial',
+        //     country: 'BD'
+        // }
+        // for (let item in person) {
+        //     document.write(person[item] + '<br/>');
+        // }
+
+        //Array concat
+        // let a = ['a', 'b', 'c'];
+        // let b = ['d', 'e', 'f'];
+        // let c = b.concat(a);
+        // document.write(c);
+
+        //Convert string to array
+        // let name = "Shah Nawaz Shohag";
+        // let nameArray = Array.from(name);
+        // document.write(nameArray[5]);
+
+        let numArray = [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ];
+        let result = numArray.filter(function(item) {
+            return item > 50;
+        });
+        document.write(result);
+
 
     </script>
 </body>
